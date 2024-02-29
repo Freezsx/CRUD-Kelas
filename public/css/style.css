@@ -1,0 +1,89 @@
+/* Container form */
+.form-signin {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-signin h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Floating label */
+.form-signin label {
+    color: #777;
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-signin input[type="email"]:hover,
+.form-signin input[type="password"]:hover {
+    border-color: #007bff;
+}
+
+.form-signin input[type="email"]:focus,
+.form-signin input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-signin button[type="submit"] {
+    border-radius: 5px;
+    padding: 12px 20px;
+    background-color: hwb(222 20% 8%);  
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form-signin button[type="submit"]:hover {
+    background-color: #5a6268; 
+}
+
+.form-signin a[href="/register"] {
+    color: #007bff;
+}
+
+.form-signin .form-group {
+    margin-bottom: 15px;
+}
+
+.form-signin .checkbox {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.form-signin p {
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+.form-signin p a {
+    color: #007bff;
+}
+
+.form-signin p a.btn {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.form-signin p a.btn:hover {
+    text-decoration: underline;
+}

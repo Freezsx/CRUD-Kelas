@@ -1,0 +1,24 @@
+.navbar-custom {
+    background-color: hsl(222, 81%, 56%); /* Warna latar belakang (hitam) */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #FFFFFF; /* Warna teks */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: #FFFFFF; /* Warna ikon toggler */
+}
+
+.navbar-custom .dropdown-menu {
+    background-color: #000000; /* Warna latar belakang dropdown (hitam) */
+}
+
+.navbar-custom .dropdown-item {
+    color: #FFFFFF; /* Warna teks dropdown */
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: #4A3EA8; /* Warna latar belakang saat hover dropdown item */
+}

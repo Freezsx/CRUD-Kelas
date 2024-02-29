@@ -1,15 +1,12 @@
-@extends('layouts.main')
-
+@extends('layouts.partial.dashboard')
 @section('container')
   <div class="text-center">
     <h1>Ini adalah halaman Kelas</h1>
     <h1>Data Kelas</h1>
-    <div class="mb-3">
-      <a class="btn btn-primary" href="/kelas/create">Add Data Kelas</a>
-    </div>
+    <a class="btn btn-primary btn-block mb-3" href="/dashboard/kelas/create">Add Data Kelas</a>
 
     @if(session('success'))
-      <div class="alert alert-success alert-dismissible fade show" role="alert" style="max-width: 400px; text-align: center; margin: 10px auto;">
+      <div class="alert alert-success alert-dismissible fade show" role="alert" style="max-width: 400px; text-align: center; margin: 10px; margin-left: 37%;">
         {{ session('success') }}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
@@ -28,12 +25,12 @@
         @foreach ($kelas as $kelass)
         <tr>
           <td>{{$kelass["kelas_siswa"]}}</td>
-          <td class="d-flex">
-            <a class="btn btn-primary me-1" href="/kelas/detail/{{ $kelass->id }}">Detail</a>
-            <a class="btn btn-warning me-1" href="/kelas/edit/{{ $kelass->id }}">Edit</a>
-            <form action="/kelas/delete/{{ $kelass->id }}" method="POST" class="d-inline">
+          <td>
+            <a class="btn btn-primary" href="/dashboard/kelas/detail/{{ $kelass->id }}">Detail</a>
+            <a class="btn btn-warning" href="/dashboard/kelas/edit/{{ $kelass->id }}">Edit</a>
+            <form action="/dashboard/kelas/delete/{{ $kelass->id }}" method="POST" class="d-inline">
               @method('delete')
-              @csrf 
+              @csrf
               <button onclick="return confirm('Apakah kamu ingin menghapus data siswa ini ? ')" class="btn btn-danger">Delete</button>
             </form>
           </td>

@@ -1,0 +1,61 @@
+/* CSS untuk styling tabel */
+.table {
+    font-size: 14px; /* ukuran font default */
+}
+
+.table th,
+.table td {
+    border: 1px solid #dee2e6; /* warna garis tepi */
+    padding: 12px; /* ruang isi sel */
+    vertical-align: middle; /* posisi teks di tengah vertikal */
+}
+
+.table thead th {
+    background-color: #6C5CE7; /* warna latar header */
+    color: #fff; /* warna teks header */
+    font-weight: bold; /* tebal teks header */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* warna latar baris genap */
+}
+
+/* CSS untuk tombol aksi pada tabel */
+.action-buttons a {
+    padding: 8px 16px; /* ruang dalam tombol */
+    text-decoration: none; /* hilangkan dekorasi tautan */
+    border-radius: 4px; /* sudut sudut tombol */
+}
+
+.action-buttons a.btn-primary {
+    background-color: #6C5CE7; /* warna latar tombol primer */
+    border-color: #6C5CE7; /* warna border tombol primer */
+    color: #fff; /* warna teks tombol primer */
+}
+
+.action-buttons a.btn-primary:hover {
+    background-color: #563d7c; /* warna latar tombol primer saat dihover */
+    border-color: #563d7c; /* warna border tombol primer saat dihover */
+}
+
+.action-buttons a.btn-warning {
+    background-color: #ffc107; /* warna latar tombol peringatan */
+    border-color: #ffc107; /* warna border tombol peringatan */
+    color: #212529; /* warna teks tombol peringatan */
+}
+
+.action-buttons a.btn-warning:hover {
+    background-color: #e0a800; /* warna latar tombol peringatan saat dihover */
+    border-color: #d39e00; /* warna border tombol peringatan saat dihover */
+}
+
+.action-buttons a.btn-danger {
+    background-color: #dc3545; /* warna latar tombol bahaya */
+    border-color: #dc3545; /* warna border tombol bahaya */
+    color: #fff; /* warna teks tombol bahaya */
+}
+
+.action-buttons a.btn-danger:hover {
+    background-color: #c82333; /* warna latar tombol bahaya saat dihover */
+    border-color: #bd2130; /* warna border tombol bahaya saat dihover */
+}
