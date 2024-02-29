@@ -4,7 +4,7 @@
   <div class="text-center">
     <h1>Ini adalah halaman Students</h1>
     <h1>Data Siswa</h1>
-    <a class="btn btn-primary btn-block mb-3" href="/student/create">Add Data</a>
+  
 
     @if(session('success'))
       <div class="alert alert-success alert-dismissible fade show" role="alert" style="max-width: 400px; text-align: center; margin: 10px; margin-left: 37%;">
@@ -36,12 +36,7 @@
           <td>{{$student->alamat}}</td>
           <td>
             <a class="btn btn-primary" href="/student/detail/{{ $student->id }}">Detail</a>
-            <a class="btn btn-warning" href="/student/edit/{{ $student->id }}">Edit</a>
-            <form action="/student/delete/{{ $student->id }}" method="POST" class="d-inline">
-              @method('delete')
-              @csrf
-              <button onclick="return confirm('Apakah kamu ingin menghapus data siswa ini ? ')" class="btn btn-danger">Delete</button>
-            </form>
+    
           </td>
         </tr>
         @endforeach

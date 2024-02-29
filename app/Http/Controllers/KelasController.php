@@ -41,6 +41,17 @@ class KelasController extends Controller
         ]);
     }
 
+    public function update(Request $request, Kelas $kelas) {
+        $validateData = $request->validate([
+            "kelas_siswa" => "required",
+        ]);
+
+        $result = Kelas::where('id', $kelas->id)->update($validateData);
+        if($result) {
+            return redirect('/kelas/all')->with('success', 'Data kelas berhasil diubah !');
+        }
+    }
+
     public function destroy(Kelas $kelas) 
     {
         $result = Kelas::destroy($kelas->id);
